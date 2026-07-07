@@ -182,8 +182,8 @@ method="POST"
 
     <p className="mt-8 text-gray-400">
       Or email us at{" "}
-      <a href="mailto:hello@avnirocx.com" className="text-blue-400">
-        hello@avnirocx.com
+      <a href="mailto:hello@anvirocx.com" className="text-blue-400">
+        hello@anvirocx.com
       </a>
     </p>
   </div>
