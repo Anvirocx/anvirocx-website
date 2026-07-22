@@ -5,7 +5,6 @@ import About from "../components/about/About";
 import Process from "../components/process/Process";
 import Contact from "../components/contact/Contact";
 import Footer from "../components/footer/Footer";
-import TrustAndIndustries from "../components/home/TrustAndIndustries";
 
 export default function Home() {
   return (
@@ -21,8 +20,6 @@ export default function Home() {
 
       <Process />
 
-
-      <TrustAndIndustries />
       <Contact />
 
       <Footer />

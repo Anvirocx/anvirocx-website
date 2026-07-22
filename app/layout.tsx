@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
+import Chatbot from "../components/Chatbot";
 
 export const metadata: Metadata = {
   title: "ANVIROCX | Business Solutions Agency",
@@ -15,7 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>{children}
+        <Chatbot /></body>
     </html>
   );
 }
