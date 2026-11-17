@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Bot, Code2, Headphones, Users } from "lucide-react";
+import { ArrowUpRight, CheckCircle, Headphones, MessageSquare, Users } from "lucide-react";
 
 import Container from "../shared/Container";
 import AIGlobe from "./AIGlobe";
@@ -9,23 +9,23 @@ import AIGlobe from "./AIGlobe";
 const capabilities = [
   {
     icon: Headphones,
-    title: "Customer Experience",
-    subtitle: "Human-first support",
+    title: "Email Support",
+    subtitle: "Thoughtful, timely replies",
   },
   {
-    icon: Code2,
-    title: "Digital Products",
-    subtitle: "Web and commerce",
+    icon: MessageSquare,
+    title: "Live Chat",
+    subtitle: "Helpful real-time conversations",
   },
   {
-    icon: Bot,
-    title: "AI Automation",
-    subtitle: "Smart workflows",
+    icon: CheckCircle,
+    title: "Ticket Follow-ups",
+    subtitle: "Organized customer requests",
   },
   {
     icon: Users,
-    title: "Remote Teams",
-    subtitle: "Flexible specialists",
+    title: "Founder-led Service",
+    subtitle: "Clear, direct communication",
   },
 ];
 
@@ -47,7 +47,7 @@ export default function Hero() {
             >
               <span className="white-status-dot" />
 
-              <span>Premium business systems for modern companies</span>
+              <span>Founder-led email & chat support for US e-commerce brands</span>
             </motion.div>
 
             <motion.h1
@@ -60,11 +60,11 @@ export default function Hero() {
               }}
               className="mt-8 max-w-[760px] text-[55px] font-semibold leading-[0.91] tracking-[-0.07em] sm:text-[75px] lg:text-[84px] xl:text-[96px]"
             >
-              Build better.
+              Your customers,
               <br />
-              Operate smarter.
+              cared for.
               <br />
-              <span className="white-gradient-heading">Scale globally.</span>
+              <span className="white-gradient-heading">Your brand, growing.</span>
             </motion.h1>
 
             <motion.p
@@ -73,9 +73,7 @@ export default function Hero() {
               transition={{ duration: 0.75, delay: 0.2 }}
               className="mt-8 max-w-[650px] text-[16px] font-medium leading-8 text-slate-500 sm:text-[18px]"
             >
-              ANVIROCX connects customer support, digital execution, AI
-              automation and managed remote teams into one dependable growth
-              system.
+              ANVIROCX provides founder-led email and live chat support for US e-commerce brands. From order updates and returns to routine questions and ticket follow-ups, we work within your approved policies and agreed coverage hours.
             </motion.p>
 
             <motion.div
@@ -84,13 +82,13 @@ export default function Hero() {
               transition={{ duration: 0.75, delay: 0.3 }}
               className="mt-10 flex flex-col gap-4 sm:flex-row"
             >
-              <a href="/services" className="white-primary-cta group">
-                Start a project
+              <a href="/contact" className="white-primary-cta group">
+                Discuss your support needs
                 <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:rotate-45" />
               </a>
 
-              <a href="/services" className="white-secondary-cta">
-                Explore capabilities
+              <a href="#pilot" className="white-secondary-cta">
+                See our 7-day pilot
               </a>
             </motion.div>
           </div>

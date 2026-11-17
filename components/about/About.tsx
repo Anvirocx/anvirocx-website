@@ -17,23 +17,23 @@ import Container from "../shared/Container";
 const operatingLayers = [
   {
     icon: Headphones,
-    title: "Customer Operations",
-    text: "Email, chat and voice support systems focused on speed, quality and customer trust.",
+    title: "Email Support",
+    text: "Clear, helpful replies to routine questions, order enquiries and customer requests.",
   },
   {
     icon: Bot,
-    title: "Automation Layer",
-    text: "Smart workflows that reduce repetitive work and keep everyday operations moving.",
+    title: "Live Chat",
+    text: "Friendly real-time assistance during the coverage hours agreed with your business.",
   },
   {
     icon: Layers3,
-    title: "Digital Execution",
-    text: "Websites, Shopify, creative production and digital support delivered through one team.",
+    title: "Ticket Management",
+    text: "Categorization, follow-ups and escalation so customer requests stay organized.",
   },
   {
     icon: Users2,
-    title: "Managed Teams",
-    text: "Flexible specialists for back office, virtual assistance, editing, design and data work.",
+    title: "Clear Reporting",
+    text: "A concise weekly summary of common questions, open issues and recurring themes.",
   },
 ];
 
@@ -50,22 +50,20 @@ export default function About() {
           <div>
             <div className="about-eyebrow">
               <Sparkles className="h-3.5 w-3.5" />
-              <span>One connected business partner</span>
+              <span>A practical support partner</span>
             </div>
 
             <h2 className="mt-7 max-w-[720px] text-[48px] font-semibold leading-[0.94] tracking-[-0.065em] text-slate-950 sm:text-[66px] lg:text-[78px]">
-              More than an agency.
+              Customer care,
               <br />
               <span className="about-gradient-text">
-                An operating layer.
+                handled with care.
               </span>
             </h2>
           </div>
 
           <p className="max-w-[640px] text-[16px] font-medium leading-8 text-slate-500 sm:text-[18px] lg:justify-self-end">
-            ANVIROCX brings customer experience, technology, automation and
-            managed remote talent together—so growing companies can execute
-            faster without managing multiple disconnected vendors.
+            ANVIROCX provides founder-led email and live chat support for small businesses that want customers to feel heard without hiring a full in-house team.
           </p>
         </div>
 
@@ -84,24 +82,23 @@ export default function About() {
 
                 <span className="about-status-badge">
                   <span />
-                  Systems connected
+                  Support built around you
                 </span>
               </div>
 
               <div className="mt-16">
                 <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-pink-600/70">
-                  Integrated delivery model
+                  A focused support service
                 </p>
 
                 <h3 className="mt-5 text-[36px] font-semibold leading-[1] tracking-[-0.055em] text-slate-950 sm:text-[50px]">
-                  One relationship.
+                  One clear scope.
                   <br />
-                  Multiple capabilities.
+                  Consistent customer care.
                 </h3>
 
                 <p className="mt-6 max-w-[570px] text-[15px] font-medium leading-7 text-slate-500">
-                  From customer support to digital delivery and automation,
-                  every service works inside one coordinated operating system.
+                  We agree on channels, working hours, workflows and escalation rules before support begins.
                 </p>
               </div>
             </div>
@@ -121,10 +118,10 @@ export default function About() {
 
             <div className="mt-12 space-y-4">
               {[
-                "Clear ownership across every workflow",
-                "Flexible capacity as needs change",
-                "Consistent communication and reporting",
-                "Human expertise supported by automation",
+                "Email and live chat support",
+                "Agreed coverage hours and scope",
+                "Ticket follow-ups and escalation",
+                "Weekly summary and direct communication",
               ].map((item) => (
                 <div key={item} className="about-check-row">
                   <CheckCircle2 className="h-5 w-5 text-pink-500" />
@@ -134,7 +131,7 @@ export default function About() {
             </div>
 
             <a href="/contact" className="about-text-link group">
-              Build your operating system
+              Discuss your support needs
               <ArrowUpRight className="h-4 w-4 group-hover:rotate-45" />
             </a>
           </motion.article>
