@@ -4,9 +4,9 @@ import "./globals.css";
 import Chatbot from "../components/Chatbot";
 
 export const metadata: Metadata = {
-  title: "ANVIROCX | Business Solutions Agency",
+  title: "ANVIROCX | Email & Live Chat Customer Support",
   description:
-    "Premium customer support, virtual assistants, development, creative services, automation and managed remote teams.",
+    "Founder-led email support, live chat, and ticket management for growing e-commerce businesses.",
 };
 
 export default function RootLayout({
