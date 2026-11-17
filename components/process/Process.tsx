@@ -17,33 +17,33 @@ const steps = [
   {
     icon: Search,
     label: "Discover",
-    title: "Understand the operation",
+    title: "Understand your support needs",
     description:
-      "We study your goals, current workflows, customer journey and execution gaps before recommending anything.",
+      "We review your customer questions, order workflows, support tools and required coverage before proposing a scope.",
     meta: ["Business needs", "Workflow review", "Priority mapping"],
   },
   {
     icon: Compass,
     label: "Design",
-    title: "Build the right system",
+    title: "Agree on a clear pilot",
     description:
-      "We create a focused delivery model with clear responsibilities, tools, timelines and measurable outcomes.",
+      "We agree on coverage hours, approved replies, escalation rules, access permissions and a short paid pilot.",
     meta: ["Operating plan", "Team structure", "Success metrics"],
   },
   {
     icon: Layers3,
     label: "Launch",
-    title: "Deploy with control",
+    title: "Start handling tickets",
     description:
-      "Your selected team, workflows and reporting structure are launched through a structured onboarding process.",
+      "After onboarding, we handle approved email and chat inquiries and flag issues that need your team’s decision.",
     meta: ["Team onboarding", "Process setup", "Quality checks"],
   },
   {
     icon: Rocket,
     label: "Scale",
-    title: "Improve continuously",
+    title: "Review and decide next steps",
     description:
-      "We monitor performance, solve bottlenecks and expand capacity as your business requirements evolve.",
+      "We review the pilot together, share a support summary and decide whether a monthly arrangement makes sense.",
     meta: ["Performance review", "Optimization", "Flexible scaling"],
   },
 ];
@@ -159,7 +159,7 @@ export default function Process() {
             </p>
 
             <h3 className="mt-3 text-[27px] font-semibold tracking-[-0.045em] text-slate-950 sm:text-[34px]">
-              Let’s build your next operating system.
+              Let’s make customer support simpler.
             </h3>
           </div>
 
