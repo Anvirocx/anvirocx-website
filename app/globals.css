@@ -9718,3 +9718,17 @@ html {
 .luxury-contact-form .contact-form-disclaimer { color:#a3b2d0; }
 .luxury-contact-form .contact-page-success p { color:#b2c2e0; }
 @media(max-width:680px){.luxury-contact-form .contact-page-form-card{padding:24px 18px;}.luxury-contact-form .contact-phone-field,.luxury-contact-form .contact-form-grid{grid-template-columns:1fr;}}
+
+/* V3 consistency: all customer-support lead tools use the same high-contrast palette. */
+.enterprise-enquiry-section { background:radial-gradient(circle at 8% 18%,#273e7b44,transparent 32%),#070e1f; }
+.enterprise-form-card { background:#111e3a; border-color:#425b8a; color:#edf3ff; }
+.enterprise-form-card label > span { color:#d8e3ff; }
+.enterprise-form-card input:not([type="hidden"]),
+.enterprise-form-card select,
+.enterprise-form-card textarea { background:#09152e; border-color:#465e89; color:#f5f8ff; color-scheme:dark; }
+.enterprise-form-card input::placeholder,.enterprise-form-card textarea::placeholder { color:#9badd0; opacity:1; }
+.enterprise-form-card option { background:#111e3a; color:#fff; }
+.enterprise-form-card input:focus,.enterprise-form-card select:focus,.enterprise-form-card textarea:focus { background:#152647; border-color:#a7bcff; }
+.enterprise-form-note { color:#a8b8d7; }
+@media(max-width:960px){.enterprise-enquiry-shell{grid-template-columns:minmax(0,1fr);gap:35px}.enterprise-enquiry-copy{position:static;}}
+@media(max-width:620px){.enterprise-enquiry-section{padding:70px 18px}.enterprise-form-card{padding:22px 18px}.enterprise-form-grid,.enterprise-phone-field{grid-template-columns:minmax(0,1fr)}}
