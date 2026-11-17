@@ -14,9 +14,9 @@ import Container from "../shared/Container";
 
 const trustPoints = [
   "Clear scope before work begins",
-  "Flexible engagement models",
-  "Direct communication and reporting",
-  "Built for long-term business growth",
+  "Email and live chat during agreed hours",
+  "Clear escalation rules and weekly summaries",
+  "Start with a defined, paid pilot",
 ];
 
 export default function Contact() {
@@ -44,17 +44,17 @@ export default function Contact() {
             </div>
 
             <h2 className="mt-7 max-w-[700px] text-[48px] font-semibold leading-[0.94] tracking-[-0.065em] text-slate-950 sm:text-[66px] lg:text-[76px]">
-              Let’s build what
+              Let’s make
               <br />
               <span className="contact-gradient-text">
-                your business needs next.
+                customer support easier.
               </span>
             </h2>
 
             <p className="mt-7 max-w-[610px] text-[16px] font-medium leading-8 text-slate-500 sm:text-[18px]">
-              Tell us what you are trying to improve, build or scale. We will
-              help you identify the right combination of people, technology
-              and operations.
+              Tell us about your customers, support channels and current workload.
+              We’ll discuss a practical email and live chat support scope that fits
+              your business.
             </p>
 
             <div className="mt-10 space-y-4">
@@ -89,8 +89,8 @@ export default function Contact() {
                 </div>
 
                 <div>
-                  <span>Response time</span>
-                  <strong>Within one business day</strong>
+                  <span>Availability</span>
+                  <strong>Coverage by agreement</strong>
                 </div>
               </div>
             </div>
@@ -106,17 +106,17 @@ export default function Contact() {
             <div className="contact-form-header">
               <div>
                 <p className="text-[10px] font-bold uppercase tracking-[0.18em] text-pink-600/70">
-                  Project enquiry
+                  Customer support enquiry
                 </p>
 
                 <h3 className="mt-3 text-[30px] font-semibold tracking-[-0.045em] text-slate-950">
-                  Tell us about your project
+                  Tell us about your support needs
                 </h3>
               </div>
 
               <div className="contact-secure-badge">
                 <ShieldCheck className="h-4 w-4" />
-                Secure
+                Scoped enquiry
               </div>
             </div>
 
@@ -161,18 +161,33 @@ export default function Contact() {
                   <span>Service needed</span>
                   <select name="service" defaultValue="">
                     <option value="" disabled>
-                      Select a service
+                      Select support needed
                     </option>
-                    <option>Customer Support</option>
-                    <option>Virtual Assistants</option>
-                    <option>Back Office</option>
-                    <option>Website Development</option>
-                    <option>Shopify</option>
-                    <option>Video Editing</option>
-                    <option>Graphic Design</option>
-                    <option>Data Entry</option>
-                    <option>AI Automation</option>
-                    <option>Managed Remote Teams</option>
+                    <option>Email Support</option>
+                    <option>Live Chat Support</option>
+                    <option>Email and Live Chat</option>
+                    <option>Customer Support Pilot</option>
+                  </select>
+                </label>
+              </div>
+
+              <div className="grid gap-5 sm:grid-cols-2">
+                <label className="contact-field">
+                  <span>Approximate weekly tickets</span>
+                  <select name="weekly_ticket_volume" defaultValue="">
+                    <option value="">Not sure yet</option>
+                    <option>Under 100</option>
+                    <option>100–300</option>
+                    <option>300+</option>
+                  </select>
+                </label>
+                <label className="contact-field">
+                  <span>Coverage needed</span>
+                  <select name="coverage" defaultValue="">
+                    <option value="">Let’s discuss</option>
+                    <option>Weekdays</option>
+                    <option>Evenings / US hours</option>
+                    <option>Weekend overflow</option>
                   </select>
                 </label>
               </div>
@@ -182,7 +197,7 @@ export default function Contact() {
                 <textarea
                   name="message"
                   rows={6}
-                  placeholder="Tell us what you need help with..."
+                  placeholder="Tell us about your business, support channels, approximate request volume, and the hours you need covered..."
                   required
                 />
               </label>
