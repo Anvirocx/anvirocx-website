@@ -322,7 +322,7 @@ export default function ServiceLeadTools({
               </span>
 
               <div>
-                <strong>ANVIROCX Assistant</strong>
+                <strong>Anvi</strong>
                 <small>{serviceTitle}</small>
               </div>
             </div>
