@@ -82,7 +82,7 @@ export default function Chatbot() {
     {
       id: 1,
       sender: "bot",
-      text: "Hi! I'm ANVIROCX's automated assistant. I can guide you through a quick enquiry and send it to our inbox. What support do you need?",
+      text: "Hi! I'm Anvi, ANVIROCX's automated assistant. I can guide you through a quick enquiry and send it to our inbox. What support do you need?",
     },
   ]);
 
@@ -190,7 +190,7 @@ export default function Chatbot() {
       {
         id: Date.now(),
         sender: "bot",
-        text: "Hi! I'm ANVIROCX's automated assistant. I can guide you through a quick enquiry and send it to our inbox. What support do you need?",
+        text: "Hi! I'm Anvi, ANVIROCX's automated assistant. I can guide you through a quick enquiry and send it to our inbox. What support do you need?",
       },
     ]);
   }
@@ -258,7 +258,7 @@ export default function Chatbot() {
       {isOpen && (
         <section
           className="chatbot-panel"
-          aria-label="ANVIROCX virtual assistant"
+          aria-label="Anvi virtual assistant"
         >
           <header className="chatbot-header">
             <div className="chatbot-agent">
@@ -268,7 +268,7 @@ export default function Chatbot() {
               </div>
 
               <div>
-                <h2>ANVIROCX Assistant</h2>
+                <h2>Anvi</h2>
                 <p>
                   <span />
                   Automated assistant
