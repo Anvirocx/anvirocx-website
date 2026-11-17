@@ -44,100 +44,16 @@ const initialLeadData: LeadData = {
 };
 
 const serviceOptions = [
-  {
-    label: "Customer Support",
-    icon: Headphones,
-  },
-  {
-    label: "Virtual Assistant",
-    icon: Users,
-  },
-  {
-    label: "Website Development",
-    icon: Sparkles,
-  },
-  {
-    label: "Shopify Store",
-    icon: ShoppingBag,
-  },
-  {
-    label: "Graphic Design",
-    icon: Sparkles,
-  },
-  {
-    label: "Video Editing",
-    icon: Sparkles,
-  },
-  {
-    label: "AI Automation",
-    icon: Bot,
-  },
-  {
-    label: "Data Entry",
-    icon: Sparkles,
-  },
-  {
-    label: "Managed Remote Team",
-    icon: Users,
-  },
+  { label: "Email Support", icon: Headphones },
+  { label: "Live Chat Support", icon: MessageCircle },
+  { label: "Ticket Management", icon: Bot },
+  { label: "Multiple Support Channels", icon: Sparkles },
 ];
-
 const projectTypes: Record<string, string[]> = {
-  "Customer Support": [
-    "Email Support",
-    "Live Chat Support",
-    "Voice Support",
-    "Complete Support Team",
-  ],
-  "Virtual Assistant": [
-    "Administrative Assistant",
-    "Executive Assistant",
-    "Research Assistant",
-    "Custom Requirement",
-  ],
-  "Website Development": [
-    "Business Website",
-    "E-commerce Website",
-    "Landing Page",
-    "Website Redesign",
-    "Custom Project",
-  ],
-  "Shopify Store": [
-    "New Shopify Store",
-    "Store Redesign",
-    "Product Upload",
-    "Store Optimization",
-  ],
-  "Graphic Design": [
-    "Social Media Creatives",
-    "Website Graphics",
-    "Brand Materials",
-    "E-commerce Creatives",
-  ],
-  "Video Editing": [
-    "Short-form Videos",
-    "Product Videos",
-    "YouTube Videos",
-    "Advertisement Videos",
-  ],
-  "AI Automation": [
-    "Workflow Automation",
-    "Customer Support Automation",
-    "Lead Automation",
-    "Custom AI Solution",
-  ],
-  "Data Entry": [
-    "Spreadsheet Entry",
-    "Product Catalog Entry",
-    "CRM Data Entry",
-    "Large Data Project",
-  ],
-  "Managed Remote Team": [
-    "Customer Support Team",
-    "Operations Team",
-    "Creative Team",
-    "Custom Remote Team",
-  ],
+  "Email Support": ["Order enquiries", "Returns and refunds", "General inbox support", "Other email support"],
+  "Live Chat Support": ["Pre-sale questions", "Order assistance", "Post-purchase chat", "Other live chat"],
+  "Ticket Management": ["Helpdesk setup", "Ticket triage", "Escalations and follow-ups", "Other ticket needs"],
+  "Multiple Support Channels": ["Email + live chat", "Email + tickets", "All three channels", "Let's discuss"],
 };
 
 const budgetOptions = [
@@ -166,7 +82,7 @@ export default function Chatbot() {
     {
       id: 1,
       sender: "bot",
-      text: "Hi! Welcome to ANVIROCX. How can we help your business today?",
+      text: "Hi! I'm ANVIROCX's automated assistant. I can guide you through a quick enquiry and send it to our inbox. What support do you need?",
     },
   ]);
 
@@ -274,7 +190,7 @@ export default function Chatbot() {
       {
         id: Date.now(),
         sender: "bot",
-        text: "Hi! Welcome to ANVIROCX. How can we help your business today?",
+        text: "Hi! I'm ANVIROCX's automated assistant. I can guide you through a quick enquiry and send it to our inbox. What support do you need?",
       },
     ]);
   }
@@ -322,7 +238,7 @@ export default function Chatbot() {
       window.setTimeout(() => {
         addMessage(
           "bot",
-          "Thank you! Your requirement has been submitted successfully. Our team will contact you shortly.",
+          "Thank you! Your requirement has been submitted successfully. We'll review your enquiry and respond by email.",
         );
         setIsSubmitted(true);
         setStep(5);
@@ -355,7 +271,7 @@ export default function Chatbot() {
                 <h2>ANVIROCX Assistant</h2>
                 <p>
                   <span />
-                  Online
+                  Automated assistant
                 </p>
               </div>
             </div>
@@ -373,7 +289,7 @@ export default function Chatbot() {
           <div ref={contentRef} className="chatbot-content">
             <div className="chatbot-security">
               <Sparkles size={13} />
-              Business solutions assistant
+              Automated enquiry assistant
             </div>
 
             <div className="chatbot-messages">
