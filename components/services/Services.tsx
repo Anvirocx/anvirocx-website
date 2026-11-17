@@ -4,74 +4,51 @@ import Reveal from "../effects/Reveal";
 
 const SERVICES = [
   {
-    title: "Customer Support",
+    title: "Email Support",
     description:
-      "Live chat, email, voice and complete customer experience support.",
+      "Friendly, on-brand replies to common customer questions, order enquiries and everyday support requests.",
     href: "/services/customer-support",
   },
   {
-    title: "Virtual Assistant",
+    title: "Live Chat Support",
     description:
-      "Reliable remote assistance for administrative and operational work.",
-    href: "/services/virtual-assistant",
+      "Helpful live chat coverage during agreed hours, giving visitors and customers a timely human response.",
+    href: "/services/customer-support",
   },
   {
-    title: "Back Office Operations",
+    title: "Ticket Follow-ups",
     description:
-      "Structured back-office execution for growing business operations.",
-    href: "/services/back-office-operations",
+      "Organized ticket tagging, follow-ups and escalation of issues that need your team's attention.",
+    href: "/services/customer-support",
   },
   {
-    title: "Website Development",
-    description: "Modern, responsive and conversion-focused business websites.",
-    href: "/services/website-development",
-  },
-  {
-    title: "Shopify Solutions",
-    description: "Complete Shopify store setup, redesign and optimization.",
-    href: "/services/shopify-solutions",
-  },
-  {
-    title: "Video Editing",
+    title: "Customer Support Pilot",
     description:
-      "Professional video editing for brands, ads and social platforms.",
-    href: "/services/video-editing",
-  },
-  {
-    title: "AI Automation",
-    description:
-      "Smart workflows that reduce repetitive work and improve efficiency.",
-    href: "/services/ai-automation",
-  },
-  {
-    title: "Managed Remote Teams",
-    description:
-      "Dedicated remote teams managed around your business requirements.",
-    href: "/services/managed-remote-teams",
+      "Start with a clearly scoped paid pilot to test workflows, communication and fit before expanding.",
+    href: "/contact",
   },
 ];
 
 export default function Services() {
   return (
-    <section id="services" className="bg-[#07111f] px-6 py-16 sm:py-20">
+    <section id="services" className="bg-slate-50 px-6 py-16 sm:py-20">
       <div className="mx-auto max-w-7xl">
         <Reveal className="flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
           <div>
             <h2 className="text-3xl font-extrabold tracking-tight bg-gradient-to-r from-slate-950 via-blue-700 to-slate-900 bg-clip-text text-transparent sm:text-4xl">
-              Our Services
+              Email & Chat Support for Online Stores
             </h2>
 
             <p className="mt-4 max-w-2xl text-slate-500">
-              Flexible business solutions designed to support operations,
-              customer experience and digital growth.
+              Order questions, shipping updates, returns and support tickets—handled within your brand guidelines and agreed coverage hours.
             </p>
           </div>
 
           <Link
-            href="/services"
+            href="/contact"
             className="inline-flex items-center gap-2 text-sm font-semibold text-slate-900"
           >
-            View all services
+            Discuss your needs
             <ArrowUpRight size={17} />
           </Link>
         </Reveal>
